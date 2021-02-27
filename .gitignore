@@ -1,5 +1,8 @@
 # Calendar files
 calendar.csv
+# Config file
+config.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
