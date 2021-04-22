@@ -41,6 +41,9 @@ while True:
             if current_date == vacation[0]:
                 school = False
                 break
+    for exception in exceptions:
+        if exception[0] == current_date:
+            day = exception[1]
     if not school:
         continue
     if current_date > end_date:

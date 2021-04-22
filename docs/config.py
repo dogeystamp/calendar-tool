@@ -61,9 +61,13 @@ vacation_days = [[datetime.datetime(2020,9,7,0,0,0,0)],
                 [datetime.datetime(2021,5,24,0,0,0,0)],
                 [datetime.datetime(2020,11,20,0,0,0,0)],
                 [datetime.datetime(2020,11,27,0,0,0,0)]]
+# In the event you need to completely disrupt the cycle, add an exception
+exceptions = [
+                [datetime.datetime(2021,4,22,0,0,0,0),3],
+                [datetime.datetime(2021,4,23,0,0,0,0),1]]
 # Start of the schedule year
 start_date = datetime.datetime(2020, 8, 28, 0, 0, 0, 0)
 # End of the schedule year
 end_date = datetime.datetime(2021, 6, 22, 0, 0, 0, 0)
-#in case you're too lazy to modify the start date or vacation days
+# In case you're too lazy to modify the start date or vacation days
 offset = 0
