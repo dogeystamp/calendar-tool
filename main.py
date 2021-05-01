@@ -3,7 +3,7 @@ import datetime
 from config import *
 
 step = datetime.timedelta(days = 1)
-day = 1;
+day = 1
 for i in range(offset):
     start_date += step
 
@@ -31,7 +31,7 @@ current_date = start_date-step
 
 while True:
     current_date += step
-    school = True;
+    school = True
     for vacation in vacation_days:
         if(len(vacation)>1):
             if current_date >= vacation[0] and current_date <= vacation[1]:
