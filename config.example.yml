@@ -1,0 +1,157 @@
+---
+
+# Copy this to config.yml and edit accordingly
+
+# List of subjects
+subjects:
+  - name: Gym
+    id: gym
+
+  - name: Maths
+    id: mat
+
+  - name: French
+    id: fr
+
+  - name: Chemistry
+    id: chem
+
+  - name: Physics
+    id: phys
+
+  - name: Contemporary world
+    id: world
+
+  - name: Info
+    id: info
+
+  - name: Drama
+    id: dram
+
+  - name: ECR
+    id: ecr
+
+  - name: English
+    id: en
+
+  - name: Music
+    id: mus
+
+# the cycle is postponed on these days
+vacation_days:
+  - single: 2023-9-4
+
+  - single: 2023-10-9
+
+  - start:  2023-10-30
+    end:    2023-11-3
+
+  - single: 2023-11-17
+
+  - single: 2023-11-24
+
+  - start:  2023-12-25
+    end:    2024-1-8
+
+  - start:  2024-1-29
+    end:    2024-2-5
+
+  - start:  2024-3-1
+    end:    2024-3-10
+
+  - start:  2024-3-29
+    end:    2024-4-5
+
+  - single: 2024-4-19
+
+  - start:  2024-5-17
+    end:    2024-5-20
+
+start_date: 2023-8-24
+end_date:   2024-6-20
+
+schedule_slots:
+  - start:  8:45
+    end:    9:30
+  - start:  9:30
+    end:   10:15
+
+  - start: 10:30
+    end:   11:15
+  - start: 11:15
+    end:   12:00
+
+  - start: 13:00
+    end:   13:45
+  - start: 13:45
+    end:   14:30
+
+  - start: 14:45
+    end:   15:45
+
+# short classes are 1 timeslot, otherwise 2
+schedule:
+  - day: 1
+    classes:
+      - id: fr
+        loc: 360
+      - id: mat
+        loc: 362
+      - id: phys
+        loc: 364
+        short: true
+      - id: ecr
+        loc: 364
+        short: true
+      - id: chem
+        loc: 364
+  - day: 2
+    classes:
+      - id: en
+        loc: 368
+      - id: world
+        loc: 368
+      - id: chem
+        loc: 362
+      - id: info
+        loc: Info room
+  - day: 3
+    classes:
+      - id: gym
+        loc: Gym 4
+      - id: chem
+        loc: 362
+      - id: dram
+        loc: Drama room
+      - id: mat
+        loc: 362
+  - day: 4
+    classes:
+      - id: mat
+        loc: 362
+      - id: phys
+        loc: 364
+      - id: en
+        loc: 368
+      - id: chem
+        loc: 364
+  - day: 5
+    classes:
+      - id: fr
+        loc: 360
+      - id: mus
+        loc: Music room
+      - id: mat
+        loc: 362
+      - id: fr
+        loc: 360
+  - day: 6
+    classes:
+      - id: phys
+        loc: 364
+      - id: fr
+        loc: 360
+      - id: world
+        loc: 362
+      - id: world
+        loc: 362

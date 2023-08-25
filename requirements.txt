@@ -1,0 +1,6 @@
+arrow==1.2.3
+attrs==23.1.0
+ics==0.7.2
+python-dateutil==2.8.2
+six==1.16.0
+TatSu==5.8.3
