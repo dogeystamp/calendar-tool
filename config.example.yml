@@ -4,94 +4,95 @@
 
 # List of subjects
 subjects:
-  - name: Gym
-    id: gym
+  gym:
+    name: Gym
 
-  - name: Maths
-    id: mat
+  mat:
+    name: Maths
 
-  - name: French
-    id: fr
+  fr:
+    name: French
 
-  - name: Chemistry
-    id: chem
+  chem:
+    name: Chemistry
 
-  - name: Physics
-    id: phys
+  phys:
+    name: Physics
 
-  - name: Contemporary world
-    id: world
+  world:
+    name: Contemporary world
 
-  - name: Info
-    id: info
+  info:
+    name: Info
 
-  - name: Drama
-    id: dram
+  dram:
+    name: drama
 
-  - name: ECR
-    id: ecr
+  ecr:
+    name: ECR
 
-  - name: English
-    id: en
+  en:
+    name: English
 
-  - name: Music
-    id: mus
+  mus:
+    name: Music
 
 # the cycle is postponed on these days
+# make sure to format dates exactly like this (otherwise it won't be parsed as a date!)
 vacation_days:
-  - single: 2023-9-4
+  - single: 2023-09-04
 
-  - single: 2023-10-9
+  - single: 2023-10-09
 
   - start:  2023-10-30
-    end:    2023-11-3
+    end:    2023-11-03
 
   - single: 2023-11-17
 
   - single: 2023-11-24
 
   - start:  2023-12-25
-    end:    2024-1-8
+    end:    2024-01-08
 
-  - start:  2024-1-29
-    end:    2024-2-5
+  - start:  2024-01-29
+    end:    2024-02-05
 
-  - start:  2024-3-1
-    end:    2024-3-10
+  - start:  2024-03-01
+    end:    2024-03-10
 
-  - start:  2024-3-29
-    end:    2024-4-5
+  - start:  2024-03-29
+    end:    2024-04-05
 
-  - single: 2024-4-19
+  - single: 2024-04-19
 
-  - start:  2024-5-17
-    end:    2024-5-20
+  - start:  2024-05-17
+    end:    2024-05-21
 
-start_date: 2023-8-24
-end_date:   2024-6-20
+start_date: 2023-08-25
+end_date:   2024-06-06
 
 schedule_slots:
-  - start:  8:45
-    end:    9:30
-  - start:  9:30
-    end:   10:15
+  - start: '08:45'
+    end:   '09:30'
+  - start: '09:30'
+    end:   '10:15'
 
-  - start: 10:30
-    end:   11:15
-  - start: 11:15
-    end:   12:00
+  - start: '10:30'
+    end:   '11:15'
+  - start: '11:15'
+    end:   '12:00'
 
-  - start: 13:00
-    end:   13:45
-  - start: 13:45
-    end:   14:30
+  - start: '13:00'
+    end:   '13:45'
+  - start: '13:45'
+    end:   '14:30'
 
-  - start: 14:45
-    end:   15:45
+  - start: '14:45'
+    end:   '15:45'
 
 # short classes are 1 timeslot, otherwise 2
 schedule:
-  - day: 1
+  1:
     classes:
       - id: fr
         loc: 360
@@ -105,7 +106,7 @@ schedule:
         short: true
       - id: chem
         loc: 364
-  - day: 2
+  2:
     classes:
       - id: en
         loc: 368
@@ -115,7 +116,7 @@ schedule:
         loc: 362
       - id: info
         loc: Info room
-  - day: 3
+  3:
     classes:
       - id: gym
         loc: Gym 4
@@ -125,7 +126,7 @@ schedule:
         loc: Drama room
       - id: mat
         loc: 362
-  - day: 4
+  4:
     classes:
       - id: mat
         loc: 362
@@ -135,7 +136,7 @@ schedule:
         loc: 368
       - id: chem
         loc: 364
-  - day: 5
+  5:
     classes:
       - id: fr
         loc: 360
@@ -145,7 +146,7 @@ schedule:
         loc: 362
       - id: fr
         loc: 360
-  - day: 6
+  6:
     classes:
       - id: phys
         loc: 364
